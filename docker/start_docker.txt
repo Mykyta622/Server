@@ -1,0 +1,16 @@
+0. create a network 
+docker network create my_network
+
+1.make two containars from srever + client 
+(i have two images)
+2.to start a server - "docker run -d --network my_network --name my_server server"
+serever can always work
+3.to start a client - "docker run --rm -it --network my_network --name my_client client"
+client must be delietet after ending 
+
+
+
+files:
+1.run_server - to start a server
+2.run_client - to start a client 
+3.stop_ server - to stop a server

@@ -1,0 +1,6 @@
+must make images 
+1) we go in (cd server)
+ "docker build -t server ."
+
+2) the same with client (cd client)
+ "docker build -t client ."

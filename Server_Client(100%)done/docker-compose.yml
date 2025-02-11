@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  server:
+    build: ./server
+    container_name: my_server
+    networks:
+      - my_network
+
+  client:
+    build: ./client
+    container_name: my_client
+    depends_on:
+      - server
+    networks:
+      - my_network
+    stdin_open: true
+    tty: true
+
+networks:
+  my_network:

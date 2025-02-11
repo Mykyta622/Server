@@ -1,2 +1,0 @@
-//to run allway a programm(server)
-nohup java -jar Server_build.jar > server.log 2>&1 &
